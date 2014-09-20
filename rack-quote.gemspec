@@ -1,3 +1,5 @@
+require File.expand_path('../lib/rack/quote/version', __FILE__)
+
 Gem::Specification.new do |gem|
   gem.authors       = ['Rob Jewell']
   gem.email         = ['jewell.robertp@gmail.com']
@@ -5,6 +7,7 @@ Gem::Specification.new do |gem|
                       of the response a quote from Ricky Gervais will appear}
   gem.summary       = %{Enjoy a quote from Ricky Gervais}
   gem.name          = 'rack-quote'
+  gem.version       = Rack::Quote::VERSION
   gem.date          = '2014-09-20'
   gem.homepage      = 'http://rubygems.org/gems/rack-quote'
   gem.license       = 'MIT'

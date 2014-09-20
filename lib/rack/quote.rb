@@ -2,6 +2,7 @@ module Rack
   class Quote
     HEADERS = {'Content-Type' => 'text/plain'}
     STATUS_CODE = 200
+
     def initialize(app)
       @app = app
       @request = ['/quote']
@@ -17,6 +18,5 @@ module Rack
         @app.call(env)
       end
     end
-
   end
 end
